@@ -1,60 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>donasipage</title>
-    <link rel="Stylesheet" href="donation&home.css">
-</head>
-<body>
+    <link rel="Stylesheet" href="donation&home.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <!-- navigasi -->
     <nav>
-        <div class="wrapper">
-            <!-- <div class="logo"><a href="">Web</a></div> -->
-            <div class="menu">
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="donasi page.html">Donasi</a></li>
-                    <li><a href="">Login</a></li>
-                    <li><a href="">Sign Up</a></li>
-                </ul>
-            </div>
+      <div class="wrapper">
+        <!-- <div class="logo"><a href="">Web</a></div> -->
+        <div class="menu">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="donasi page.html">Donasi</a></li>
+            <li><a href="">Login</a></li>
+            <li><a href="">Sign Up</a></li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- program donasi -->
-    <h2>Program Donasi</h2>
-    <div class="donate">
-        <div class="card">
-            <img src="https://img.freepik.com/free-photo/pathway-middle-green-leafed-trees-with-sun-shining-through-branches_181624-4539.jpg?size=626&ext=jpg&ga=GA1.2.37239851.1661826334&semt=sph" alt="" style="width:100%">
-            <div class="content-donasi">
-              <h2>Hijau Hutanku</h2> 
-              <p>Hutan merupakan salah satu elemen penting dalam kehidupan. Kebakaran hutan dan penebangan liar tidak hanya dapat menyebabkan banjir dan tanah longsor, tetapi juga menyebabkan krisis iklim</p>
-              <!-- button buat donasinya -->
-            </div>
-            <button onclick="document.location = ''">Donate</button>
-          </div>
-    
-          <div class="card">
-            <img src="https://img.freepik.com/free-photo/pollution-concept-with-plastic-waste_23-2149094890.jpg?size=626&ext=jpg" alt="" style="width:100%">
-            <div class="content-donasi">
-              <h2>Bersih Bumiku</h2> 
-              <p>Untuk mewujudkan bumi kita yang bersih dan bebas polusi sampah, dukung kami untuk menekankan penggunaan plastik sekali pakai dan berhenti mencemari lingkungan.</p>
-              <!-- button buat donasinya -->
-            </div>
-            <button onclick="document.location = ''">Donate</button>
-          </div>
-    
-          <div class="card">
-            <img src="https://img.freepik.com/free-photo/great-seascape-with-sunlight_1360-314.jpg?size=626&ext=jpg&ga=GA1.2.37239851.1661826334&semt=sph" alt="" style="width:100%">
-            <div class="content-donasi">
-              <h2>Sehat Lautku</h2> 
-              <p>Laut merupakan sumber kehidupan bagi banyak makhluk hidup. Laut yang terlindungi dari ancaman kerusakan dan perbudakan dapat memberikan kehidupan yang lebih baik.</p>
-              <!-- button buat donasinya -->
-            </div>
-            <button onclick="document.location = ''">Donate</button>
-          </div>
+    <h2 class="mb-5">Program Donasi</h2>
+    <div class="container">
+      <div class="row row-cols-md-3 justify-content-center" id="events-list">
+        <!-- Show Data Event -->
+      </div>
     </div>
 
     <div class="ajakan">
@@ -69,6 +49,7 @@
         <img src="https://img.freepik.com/free-vector/world-environment-day-hands-protect-earth_613284-1038.jpg?size=338&ext=jpg&ga=GA1.2.37239851.1661826334&semt=ais" alt="">
         <p>Bayangkan sebuah dunia dimana hutan tumbuh berkembang dan lautan penuh dengan kehidupan. Dimana energi bersih tersedia bagai air terjun. Dimana setiap orang mendapatkan ketenangan dan kegembiraan. Kita tidak dapat membangun masa depan ini sendiri, tapi kita bisa membangunnya bersama.</p>
       </div>
-  </div>
-</body>
+
+    <script type="text/javascript" src="event.js"></script>
+  </body>
 </html>
